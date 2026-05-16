@@ -3,7 +3,7 @@
 Heloísa Pichelli Souza<br>
 Carolina Pichelli Souza<br>
 Lucas Batista de Sousa<br>
-Maicon Pereira Veloso
+Maicon Pereira Veloso<br>
 
 Sistema de calculadora distribuída usando **gRPC** com operações unárias, client streaming, server streaming e streaming bidirecional.
 
