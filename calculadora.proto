@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package calculadora;
+
+// Mensagens de requisição e resposta
+message DoisNumeros {
+  double a = 1;
+  double b = 2;
+}
+
+message Numero {
+  double valor = 1;
+}
+
+message Resultado {
+  double valor = 1;
+  string mensagem = 2;
+}
+
+message BaseExpoente {
+  double base = 1;
+  double expoente = 2;
+}
+
+message ItemTabuada {
+  int32 multiplicador = 1;
+  double resultado = 2;
+  string expressao = 3;
+}
+
+message MediaParcial {
+  double media = 1;
+  int32 quantidade = 2;
+}
+
+// Definição do serviço
+service Calculadora {
+  // Unary RPCs
+  rpc Somar (DoisNumeros) returns (Resultado);
+  rpc Subtrair (DoisNumeros) returns (Resultado);
+  rpc Multiplicar (DoisNumeros) returns (Resultado);
+  rpc Dividir (DoisNumeros) returns (Resultado);
+  rpc CalcularPotencia (BaseExpoente) returns (Resultado);
+  rpc CalcularRaizQuadrada (Numero) returns (Resultado);
+
+  // Client Streaming
+  rpc SomarStream (stream Numero) returns (Resultado);
+
+  // Server Streaming
+  rpc GerarTabuada (Numero) returns (stream ItemTabuada);
+
+  // Bidirectional Streaming
+  rpc CalcularMediaMovel (stream Numero) returns (stream MediaParcial);
+}
