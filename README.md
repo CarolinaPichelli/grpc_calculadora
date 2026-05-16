@@ -1,8 +1,9 @@
 # Calculadora Distribuída com gRPC — Node.js
 
-Heloísa Pichelli Souza
-Carolina Pichelli Souza
-Lucas Batista de Sousa
+Heloísa Pichelli Souza<br>
+Carolina Pichelli Souza<br>
+Lucas Batista de Sousa<br>
+Maicon Pereira Veloso
 
 Sistema de calculadora distribuída usando **gRPC** com operações unárias, client streaming, server streaming e streaming bidirecional.
 
