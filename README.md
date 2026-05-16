@@ -1,4 +1,8 @@
-# 🧮 Calculadora Distribuída com gRPC — Node.js
+# Calculadora Distribuída com gRPC — Node.js
+
+Heloísa Pichelli Souza
+Carolina Pichelli Souza
+Lucas Batista de Sousa
 
 Sistema de calculadora distribuída usando **gRPC** com operações unárias, client streaming, server streaming e streaming bidirecional.
 
@@ -17,7 +21,7 @@ grpc-calculadora/
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 ### 1. Instalar dependências
 ```bash
@@ -43,7 +47,7 @@ node demo.js
 
 ---
 
-## 🔧 RPCs Implementados
+##  RPCs Implementados
 
 | RPC                  | Tipo                     | Descrição                                      |
 |----------------------|--------------------------|------------------------------------------------|
@@ -59,12 +63,12 @@ node demo.js
 
 ---
 
-## 🖥️ Menu do Cliente Interativo
+## Menu do Cliente Interativo
 
 ```
 ══════════════════════════════════════════════════
-  🧮  CALCULADORA gRPC  |  Cliente-1
-  🔗  Conectado em: localhost:50051
+    CALCULADORA gRPC  |  Cliente-1
+    Conectado em: localhost:50051
 ══════════════════════════════════════════════════
 
   ── Operações Básicas ──────────────────────
@@ -88,7 +92,7 @@ node demo.js
 
 ---
 
-## ⚙️ Variáveis de Ambiente
+##  Variáveis de Ambiente
 
 | Variável | Padrão      | Descrição                  |
 |----------|-------------|----------------------------|
